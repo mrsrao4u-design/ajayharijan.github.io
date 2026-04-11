@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ajay Kumar Rao - Portfolio</title>
+<title>Ajay Kumar Rao</title>
 
 <style>
 *{
@@ -17,7 +17,7 @@ body{
 background:#f8f9fb;
 }
 
-/* NAVBAR */
+/* NAV */
 nav{
 display:flex;
 justify-content:space-between;
@@ -27,9 +27,8 @@ background:#fff;
 }
 
 .logo{
-font-size:22px;
 font-weight:bold;
-color:#222;
+font-size:22px;
 }
 
 nav ul{
@@ -61,12 +60,8 @@ min-height:90vh;
 }
 
 /* LEFT */
-.hero-text{
-max-width:500px;
-}
-
 .hero-text span{
-font-size:14px;
+font-size:12px;
 letter-spacing:2px;
 color:#888;
 }
@@ -77,20 +72,21 @@ margin:10px 0;
 }
 
 .hero-text h1 span{
-color:#e6b980;
+color:#d8a86d;
 }
 
 .hero-text h2{
-font-size:36px;
+font-size:38px;
 font-weight:bold;
 color:#1a2b49;
 margin-bottom:15px;
 }
 
 .hero-text p{
-font-size:14px;
 color:#666;
+font-size:14px;
 margin-bottom:20px;
+max-width:400px;
 }
 
 .buttons{
@@ -105,21 +101,20 @@ border:none;
 }
 
 .btn-secondary{
-background:#fff;
 border:1px solid #ccc;
+background:#fff;
 }
 
-/* RIGHT IMAGE */
+/* RIGHT */
 .hero-img{
 position:relative;
 }
 
-/* BACKGROUND CIRCLE */
 .hero-img::before{
 content:'';
 position:absolute;
+right:-80px;
 top:-60px;
-right:-60px;
 width:520px;
 height:520px;
 background:#1f4d4d;
@@ -127,18 +122,15 @@ border-radius:50%;
 z-index:-1;
 }
 
-/* IMAGE FIX */
 .hero-img img{
 width:420px;
 height:420px;
 object-fit:cover;
-object-position:center;
 border-radius:50%;
-border:5px solid white;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
+border:5px solid #fff;
 }
 
-/* RESPONSIVE */
+/* MOBILE */
 @media(max-width:900px){
 .hero{
 flex-direction:column;
@@ -154,19 +146,17 @@ margin-top:30px;
 
 <body>
 
-<!-- NAV -->
 <nav>
 <div class="logo">GRAFIK</div>
 <ul>
-<li><a href="#">HOME</a></li>
-<li><a href="#">ABOUT</a></li>
-<li><a href="#">SERVICES</a></li>
-<li><a href="#">PORTFOLIO</a></li>
+<li>HOME</li>
+<li>ABOUT</li>
+<li>SERVICES</li>
+<li>PORTFOLIO</li>
 </ul>
 <button class="btn">Get Started</button>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
 
 <div class="hero-text">
@@ -182,12 +172,10 @@ Creative graphic designer focused on modern UI, branding, and clean design exper
 <button class="btn btn-primary">Let's Talk</button>
 <button class="btn btn-secondary">Learn More</button>
 </div>
-
 </div>
 
 <div class="hero-img">
-<!-- PHOTO -->
-<img src="ajay.png" alt="profile">
+<img src="ajay.png">
 </div>
 
 </section>
