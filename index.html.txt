@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ajay Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#0f0f1a;color:#fff;overflow-x:hidden;}
+
+/* NAV */
+nav{
+position:fixed;top:0;left:0;width:100%;padding:15px 50px;
+display:flex;justify-content:space-between;align-items:center;
+background:rgba(15,15,26,0.8);backdrop-filter:blur(10px);
+z-index:1000;
+}
+nav ul{display:flex;gap:20px;list-style:none;}
+nav a{color:#fff;text-decoration:none;transition:0.3s;}
+nav a:hover{color:#6C63FF;}
+.logo{font-weight:bold;font-size:20px;color:#6C63FF;}
+
+/* HERO */
+.hero{
+height:100vh;display:flex;align-items:center;justify-content:space-between;
+padding:0 10%;
+}
+.hero h1{font-size:50px;}
+.hero h2{color:#6C63FF;margin:10px 0;}
+.btn{
+padding:10px 20px;margin-right:10px;border:none;cursor:pointer;
+background:#6C63FF;color:#fff;border-radius:8px;
+}
+.btn2{background:transparent;border:1px solid #6C63FF;}
+.hero img{width:300px;border-radius:20px;box-shadow:0 0 20px #6C63FF;}
+
+/* SECTIONS */
+section{padding:80px 10%;}
+.title{text-align:center;margin-bottom:40px;color:#6C63FF;}
+
+/* PROJECTS */
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.card{
+background:rgba(255,255,255,0.05);
+padding:20px;border-radius:15px;
+transition:0.3s;
+}
+.card:hover{transform:translateY(-10px);}
+
+/* SKILLS */
+.skill{margin-bottom:15px;}
+.bar{background:#222;height:10px;border-radius:10px;overflow:hidden;}
+.bar div{height:100%;background:#6C63FF;}
+
+/* CONTACT */
+input,textarea{
+width:100%;padding:10px;margin:10px 0;
+border:none;border-radius:8px;
+background:#1a1a2e;color:#fff;
+}
+button{background:#6C63FF;padding:10px 20px;border:none;color:#fff;border-radius:8px;cursor:pointer;}
+
+footer{text-align:center;padding:20px;background:#111;}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">AJAY</div>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div>
+<h1>Hi, I'm Ajay</h1>
+<h2>Designer & Developer</h2>
+<p>I create modern UI & websites</p>
+<br>
+<button class="btn">View Projects</button>
+<button class="btn btn2">Download CV</button>
+</div>
+<img src="https://via.placeholder.com/300" />
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2 class="title">About Me</h2>
+<p style="text-align:center;max-width:700px;margin:auto;">
+I am a creative graphic designer and web developer passionate about
+modern UI design, branding, and clean user experiences.
+</p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2 class="title">Projects</h2>
+<div class="projects">
+<div class="card">Project 1</div>
+<div class="card">Project 2</div>
+<div class="card">Project 3</div>
+<div class="card">Project 4</div>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2 class="title">Skills</h2>
+<div class="skill">HTML<div class="bar"><div style="width:90%"></div></div></div>
+<div class="skill">CSS<div class="bar"><div style="width:85%"></div></div></div>
+<div class="skill">JavaScript<div class="bar"><div style="width:70%"></div></div></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 class="title">Contact</h2>
+<input placeholder="Your Name" />
+<input placeholder="Your Email" />
+<textarea placeholder="Message"></textarea>
+<button>Send Message</button>
+</section>
+
+<footer>
+© 2026 Ajay Portfolio | All Rights Reserved
+</footer>
+
+</body>
+</html>
