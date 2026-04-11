@@ -114,21 +114,28 @@ border:1px solid #ccc;
 position:relative;
 }
 
+/* BACKGROUND CIRCLE */
 .hero-img::before{
 content:'';
 position:absolute;
-top:-50px;
-right:-50px;
-width:450px;
-height:450px;
+top:-60px;
+right:-60px;
+width:520px;
+height:520px;
 background:#1f4d4d;
 border-radius:50%;
 z-index:-1;
 }
 
+/* IMAGE FIX */
 .hero-img img{
-width:300px;
-border-radius:10px;
+width:420px;
+height:420px;
+object-fit:cover;
+object-position:center;
+border-radius:50%;
+border:5px solid white;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 
 /* RESPONSIVE */
@@ -179,8 +186,8 @@ Creative graphic designer focused on modern UI, branding, and clean design exper
 </div>
 
 <div class="hero-img">
-<!-- YAHAN APNI PHOTO DALNA -->
-<img src="ajay.png"> alt="profile">
+<!-- PHOTO -->
+<img src="ajay.png" alt="profile">
 </div>
 
 </section>
